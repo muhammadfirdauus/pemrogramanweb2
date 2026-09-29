@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga Jasa Agensi Digital</title>
+    <!-- Font Poppins dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 6px;
+            height: 32px;
+            background: #f97316;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1rem;
+            margin-bottom: 35px;
+            margin-left: 18px;
+        }
+
+        /* Wrapper Tabel Biar Responsif */
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid #334155;
+            background-color: #1e293b;
+        }
+
+        /* Styling Tabel */
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            color: #e2e8f0;
+        }
+
+        .pricing-table th, 
+        .pricing-table td {
+            padding: 18px 24px;
+            border: 1px solid #334155;
+        }
+
+        /* Judul Utama Tabel (Baris Paling Atas) */
+        .pricing-table thead tr.main-header th {
+            background: linear-gradient(135deg, #0d9488 0%, #115e59 100%);
+            color: #ffffff;
+            text-align: center;
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 20px;
+            border: 1px solid #14b8a6;
+        }
+
+        /* Sub Header Kolom */
+        .pricing-table thead tr.sub-header th {
+            background-color: #134e4a;
+            color: #2dd4bf;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Tampilan Sel Kategori */
+        .pricing-table td.category {
+            font-weight: 700;
+            color: #f97316;
+            background-color: #1b263b;
+            font-size: 1.05rem;
+            vertical-align: middle;
+            text-align: center;
+            width: 20%;
+        }
+
+        /* Nama Paket */
+        .pricing-table td.package-name {
+            font-weight: 600;
+            color: #ffffff;
+            width: 22%;
+        }
+
+        /* Fasilitas Utama */
+        .pricing-table td.features {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            width: 38%;
+        }
+
+        /* Estimasi Biaya */
+        .pricing-table td.price {
+            font-weight: 800;
+            color: #38bdf8;
+            font-size: 1.15rem;
+            white-space: nowrap;
+            width: 20%;
+        }
+
+        /* Efek Hover Baris Tabel */
+        .pricing-table tbody tr:hover td:not(.category) {
+            background-color: #334155;
+            transition: background-color 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Judul Atas -->
+        <h2 class="section-title">Paket Layanan & Harga Jasa Kreatif</h2>
+        <p class="subtitle">Pilih paket layanan terbaik sesuai kebutuhan bisnis digital Anda:</p>
+
+        <!-- Tabel Daftar Harga -->
+        <div class="table-wrapper">
+            <table class="pricing-table">
+                <thead>
+                    <!-- Header Baris 1: Judul Utama -->
+                    <tr class="main-header">
+                        <th colspan="4">DAFTAR HARGA JASA AGENSI DIGITAL</th>
+                    </tr>
+                    <!-- Header Baris 2: Nama Kolom -->
+                    <tr class="sub-header">
+                        <th>Kategori Layanan</th>
+                        <th>Nama Paket</th>
+                        <th>Fasilitas Utama</th>
+                        <th>Estimasi Biaya</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Kategori 1: Desain & Web -->
+                    <tr>
+                        <td class="category" rowspan="2">Desain & Web</td>
+                        <td class="package-name">Landing Page Silver</td>
+                        <td class="features">1 Halaman, Kontak Form, Integrasi Chat</td>
+                        <td class="price">Rp 1.500.000</td>
+                    </tr>
+                    <tr>
+                        <td class="package-name">Website Bisnis Gold</td>
+                        <td class="features">5 Halaman, SEO Dasar, Galeri Produk Dinamis</td>
+                        <td class="price">Rp 3.500.000</td>
+                    </tr>
+
+                    <!-- Kategori 2: Content Creator -->
+                    <tr>
+                        <td class="category" rowspan="2">Content Creator</td>
+                        <td class="package-name">Sosmed Bronze</td>
+                        <td class="features">12 Konten Feed, Copywriting Dasar</td>
+                        <td class="price">Rp 1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td class="package-name">Sosmed Premium</td>
+                        <td class="features">30 Konten Feed + Reels, Riset Hashtag, Admin Sosmed</td>
+                        <td class="price">Rp 2.500.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

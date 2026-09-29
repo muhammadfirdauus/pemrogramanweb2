@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk & Portofolio - Poliban DigiCraft Studio</title>
+    <style>
+        /* CSS Dasar untuk Tabel Sesuai Instruksi 5 (Warna Kontras Header) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        /* Header utama tabel dengan latar belakang kontras */
+        .main-header {
+            background-color: #005f73;
+            color: #ffffff;
+            text-align: center;
+        }
+        /* Sub-header tabel */
+        .sub-header {
+            background-color: #0a9396;
+            color: #ffffff;
+        }
+        .category {
+            background-color: #e9d8a6;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Instruksi 2: Header dengan Nama Agensi Kreatif -->
+    <header>
+        <h1>Poliban DigiCraft Studio</h1>
+        <!-- Navigasi ke tentang.html -->
+        <nav>
+        <hr>
+            <a href="tentang.html">Tentang Founder</a> | 
+            <a href="katalog.html">Katalog Jasa & Paket Harga</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <!-- Section Portofolio & Video -->
+        <section>
+            <h2>Portofolio & Karya Unggulan Kami</h2>
+            
+            <!-- Instruksi 3: Minimal 3 Gambar Portofolio di folder assets/images/ -->
+            <div>
+                <h3>1. Desain Landing Page UMKM</h3>
+                <img src="mockup-landing-pages.jfif" alt="Mockup Landing Page" width="300">
+                <p><em>Gambar 1: Desain Landing Page Responsif untuk UMKM Lokal</em></p>
+
+                <h3>2. Desain Identitas Brand</h3>
+                <img src="logo-umkm.png" alt="Mockup Branding Logo" width="300">
+                <p><em>Gambar 2: Desain Identitas Brand & Logo</em></p>
+
+                <h3>3. Dashboard Aplikasi Web</h3>
+                <img src="dashboard.jfif" alt="Mockup Dashboard Web" width="300">
+                <p><em>Gambar 3: UI/UX Dashboard Sistem Informasi</em></p>
+            </div>
+
+            <br><hr><br>
+
+            <!-- Instruksi 4: Video Promosi/Profil Jasa dari YouTube (Embed/Iframe) -->
+            <h3>Video Profil Bisnis Kami</h3>
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="YouTube Video Player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </section>
+
+        <br><hr><br>
+
+        <!-- Instruksi 5: Tabel Harga dengan 3 Kategori, Colspan (1x), Rowspan (minimal 2x), & Header Kontras -->
+        <section>
+            <h2>Paket Layanan & Harga Jasa Kreatif</h2>
+            <p>Pilih paket layanan terbaik sesuai kebutuhan bisnis digital Anda:</p>
+
+            <table>
+                <thead>
+                    <!-- Penggunaan COLSPAN (1 kali) -->
+                    <tr class="main-header">
+                        <th colspan="4">DAFTAR HARGA JASA AGENSI DIGITAL</th>
+                    </tr>
+                    <tr class="sub-header">
+                        <th>Kategori Layanan</th>
+                        <th>Nama Paket</th>
+                        <th>Fasilitas Utama</th>
+                        <th>Estimasi Biaya</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Kategori 1: Desain & Web (ROWSPAN Pertama) -->
+                    <tr>
+                        <td class="category" rowspan="2">Desain & Web</td>
+                        <td>Landing Page Silver</td>
+                        <td>1 Halaman, Form Kontak, Integrasi Chat</td>
+                        <td>Rp 1.500.000</td>
+                    </tr>
+                    <tr>
+                        <td>Website Bisnis Gold</td>
+                        <td>5 Halaman, SEO Dasar, Galeri Produk Dinamis</td>
+                        <td>Rp 3.500.000</td>
+                    </tr>
+
+                    <!-- Kategori 2: Content Creator (ROWSPAN Kedua) -->
+                    <tr>
+                        <td class="category" rowspan="2">Content Creator</td>
+                        <td>Sosmed Bronze</td>
+                        <td>12 Konten Feed, Copywriting Dasar</td>
+                        <td>Rp 1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Sosmed Premium</td>
+                        <td>30 Konten Feed + Reels, Riset Hashtag, Admin Sosmed</td>
+                        <td>Rp 2.500.000</td>
+                    </tr>
+
+                    <!-- Kategori 3: Digital Marketing (ROWSPAN Ketiga - Tambahan Kategori Ke-3) -->
+                    <tr>
+                        <td class="category" rowspan="2">Digital Marketing</td>
+                        <td>Ads Starter</td>
+                        <td>Setup Meta Ads, Target Audience Basic</td>
+                        <td>Rp 1.200.000</td>
+                    </tr>
+                    <tr>
+                        <td>Ads Enterprise</td>
+                        <td>Meta Ads + Google Ads, Custom Pixel, Monthly Report</td>
+                        <td>Rp 3.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
